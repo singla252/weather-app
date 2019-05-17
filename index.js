@@ -30,6 +30,8 @@ const getWeather = async locations => {
                
 }
 
+getWeather(process.argv.slice(2));
+
 module.exports={
     getWeather: getWeather
 }
