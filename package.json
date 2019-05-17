@@ -4,7 +4,7 @@
   "description": "A small app to get weather for a list of cities or zipcodes",
   "main": "index.js",
   "scripts": {
-    "test":  "jest --watchAll"
+    "test": "jest --watchAll"
   },
   "repository": {
     "type": "git",
@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/singla252/weather-app#readme",
   "dependencies": {
-    "jest": "^24.8.0"
+    "jest": "^24.8.0",
+    "r2": "^2.0.1"
   }
 }
