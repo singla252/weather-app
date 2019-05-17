@@ -8,6 +8,13 @@ describe('getWeather',()=>{
         expect(result).toHaveProperty('cod','400');
     })
 
+    it('should give error code 400 if input is empty array',async()=>{
+        const result=await getWeather([]);
+        expect(result).toBeDefined();
+        expect(result).not.toBeNull();
+        expect(result).toHaveProperty('cod','400');
+    })
+
     it('should give error code 404 for incorrect city or zipcode',async()=>{
         const result=await getWeather(['afr', 123]);
         expect(result).toBeDefined();
