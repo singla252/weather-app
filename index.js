@@ -34,6 +34,11 @@ const getWeather = async locations => {
 
 }
 
+const locations = process.argv.slice(2);
+(async locations=>{
+    console.log(await getWeather(locations));
+})(locations);
+
 
 module.exports = {
     getWeather: getWeather
