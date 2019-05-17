@@ -9,7 +9,7 @@ describe('getWeather',()=>{
     })
 
     it('should give error code 404 for incorrect city or zipcode',async()=>{
-        const result=await getWeather(['afr']);
+        const result=await getWeather(['afr', 123]);
         expect(result).toBeDefined();
         expect(result).not.toBeNull();
         for(let i in result){
